@@ -1,18 +1,14 @@
 **_Requesting and Receiving data from Patient Log
 **_
 
-Open the code file patientlog.py in Python Friendly IDE such as Pycharm, VS Code or JetBrain 
+Open the code file ascii.py in Python Friendly IDE such as Pycharm, VS Code or JetBrain 
 
 Run the file
 
-In the console, it will ask you options -: Choose 2 to retrieve the data
+In the console, it will ask you to enter a string
 
-Choose the Patient whose details you want to request through the numbers
+Once you enter the string and run the program
 
-Once you choose the number of patient such as Patient #1, you will see what food they had and which date it was.
+It will print out all the ASCII code for each character in the string 
 
-That is all you need to do to receive the data. 
-
-If you see a FileNotFoundError, that means that this patient's data was not yet logged in. 
-
-![image](https://user-images.githubusercontent.com/90288969/218347780-365ce89f-b036-4bb4-82f5-46ea4fcccb3d.png)
+![image](https://user-images.githubusercontent.com/90288969/218589497-ab415df8-1b98-4dd6-abb7-5fed4c1b2c0f.png)
