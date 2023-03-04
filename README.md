@@ -102,3 +102,4 @@ You can then use the value of the variable to perform further processing or disp
                   +                                  +
                   |                                  |
 
+**this UML sequence diagram illustrates both the process of requesting data from the client to the server (steps 1-4) and the process of receiving data from the server to the client (steps 5-9). Step 10 is the final step that occurs after both processes are complete, which is closing the connection between the client and server.**
