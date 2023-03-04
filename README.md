@@ -1,14 +1,105 @@
-**_Requesting and Receiving data from Patient Log
-**_
+1. Clear instructions for how to REQUEST data from the microservice you implemented. Include an example call.
 
-Open the code file ascii.py in Python Friendly IDE such as Pycharm, VS Code or JetBrain 
+2. Start by running the server code on your machine. This will create a socket object and bind it to a specific host and port.
 
-Run the file
+3. Next, run the client code on your machine. This will create a socket object and connect to the server using the same host and port.
 
-In the console, it will ask you to enter a string
+4. Once the connection is established, the client will prompt you to enter a string. Type in the string that you want to send to the server and press enter.
 
-Once you enter the string and run the program
+5. The client will then send the string to the server, which will receive the data using the recv() method.
 
-It will print out all the ASCII code for each character in the string 
+6. The server will then convert the string to ASCII codes and send the response back to the client using the send() method.
 
-![image](https://user-images.githubusercontent.com/90288969/218589497-ab415df8-1b98-4dd6-abb7-5fed4c1b2c0f.png)
+7. The client will receive the response from the server and print it on the console.
+
+Here's an example call for the microservice: Enter a string: Hello, world!
+
+** Type in "Hello, world!" (without quotes) and press enter.
+**
+8. The client will then send the string to the server, and the server will respond with the ASCII codes of each character in the string.
+
+9. The client will print the response on the console, which should look something like this: **ASCII codes: 72, 101, 108, 108, 111, 44, 32, 119, 111, 114, 108, 100, 33**
+
+NOTE that the actual response may differ based on the input you provide.
+
+
+
+_Clear instructions for how to RECEIVE data from the microservice you implemented
+_****
+
+Start by running the server code on your machine. This will create a socket object and bind it to a specific host and port.
+
+Next, run the client code on your machine. This will create a socket object and connect to the server using the same host and port.
+
+Once the connection is established, the client will prompt you to enter a string. Type in the string that you want to send to the server and press enter.
+
+The client will then send the string to the server, which will receive the data using the recv() method.
+
+The server will then convert the string to ASCII codes and send the response back to the client using the send() method.
+
+The client will receive the response from the server using the recv() method and store it in a variable.
+
+You can then use the value of the variable to perform further processing or display the response to the user.
+
+
+
+                Client                             Server
+                  |                                  |
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |        1. Connection request       |
+                  |--------------------------------->|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |        2. Connection accepted      |
+                  |<---------------------------------|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |      3. Prompt user for input      |
+                  |<---------------------------------|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |        4. Send data to server      |
+                  |--------------------------------->|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |       5. Receive data from client  |
+                  |<---------------------------------|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |        6. Convert data to ASCII    |
+                  |                                  |
+                  |                                  |
+                  |        7. Send response to client  |
+                  |--------------------------------->|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |   8. Receive response from server  |
+                  |<---------------------------------|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |        9. Display response         |
+                  |                                  |
+                  |                                  |
+                  |                                  |
+                  |                                  |
+                  |                                  |
+                  |                                  |
+                  |<---------------------------------|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+                  |         10. Close connection      |
+                  |--------------------------------->|
+                  |                                  |
+                  +                                  +
+                  |                                  |
+
